@@ -1,0 +1,82 @@
+@font-face{
+    font-family: funkyHeading ;
+    src: url("ShadowsIntoLightTwo-Regular.ttf");
+}
+@font-face{
+    font-family: roboto ;
+    src: url("Roboto-Light.ttf");
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 500px;
+    margin: auto;
+    margin-top: 60px;
+    font-family: roboto ;
+}
+.container h1{
+    font-family: funkyHeading ;
+}
+.container form input[type="text"] {
+    width: 350px;
+    padding: 5px;
+}
+.container form input[type="submit"] {
+    margin: 0;
+    padding: 6px;
+    background-color: #66ccff;
+    border: 1px solid #ffffff;
+    border-radius: 2px;
+    color: #ffffff;
+    cursor: pointer;
+}
+.container form input[type="submit"]:hover
+{
+    background-color: #ffffff;
+    color: #66ccff;
+    border: 1px solid #66ccff;
+    border-radius: 2px;
+} 
+.container table{
+    width: 447px;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: center;
+}
+.container th , td {
+    padding: 5px;
+}
+.container th {
+    font-weight: 100;
+    background-color: #e6e6e6;
+  
+}
+.container td:nth-child(2){
+    text-align: left;
+}
+.container td {
+    font-size: 15px;
+}
+.container td a:first-child{
+    text-decoration: none;
+    font-size: 15px;
+    color: #212121;
+}
+.container td a:nth-child(2){
+    text-decoration: none;
+    font-size: 15px;
+    color: #66ff66;;
+}
+.container td a:nth-child(3){
+    text-decoration: none;
+    font-size: 15px;
+    color: #ff3300;
+}
+.container td a:hover{
+    opacity: 0.5;
+}
+.container tr:nth-child(even){
+    background-color: #f2f2f2;
+}
