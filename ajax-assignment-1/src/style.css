@@ -1,0 +1,188 @@
+@font-face{
+    font-family: roboto ;
+    src: url("Roboto-Light.ttf");
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+.container .login{
+    width: 40%;
+    margin: 10% auto;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 5px 1px #a6a6a6;
+    text-align: center;
+    font-family: roboto;
+    padding: 20px;
+}
+.container h1{
+    padding: 25px 0;
+    font-weight: 100;
+    color: #333333;
+    margin: 0;
+} 
+.container .login  form{
+    padding: 20px 0;
+}
+.container .login form input{
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+    background-color: #f2f2f2;
+    border: none;
+}
+.container .login form input[type="submit"]{
+    color: #ffffff;
+    width: 200px;
+    background-color: #e6e600;
+    cursor: pointer;
+    border: 1px solid #e6e600;
+}
+.container .login form input[type="submit"]:hover{
+    background-color: #ffffff;
+    color: #e6e600;
+    transition: 0.5s;
+}
+.container .login form span{
+    font-size: 15px;
+    margin: 10px;
+    text-align: center;
+    color: red;
+    font-family: roboto;
+}
+.container .login a{
+    text-decoration: none;
+    color: #00aaff; 
+}
+/*sign up*/
+.container .signup{
+    width: 70%;
+    margin: 2% auto 0;
+    background-color: #ffffff;
+    font-family: roboto;
+    padding: 20px;
+}
+.container .signup form{
+    padding: 27px 0;
+}
+.container .signup form input
+{
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #b3b3b3;
+    margin: 0 0 20px 0;
+}
+.container .signup form input[type="submit"]{
+    color: #ffffff;
+    width: 236px;
+    background-color: #e6e600;
+    cursor: pointer;
+    border: 1px solid #e6e600;
+    margin: 0px 44px;
+    font-size: 18px;
+}
+.container .signup form input[type="submit"]:hover{
+    background-color: #ffffff;
+    color: #e6e600;
+    transition: 0.5s;
+}
+.container .signup p{
+    margin: 0 55px;
+}
+.container .signup p a{
+    text-decoration: none;
+    color: #00aaff;
+}
+.container .signup form span{
+    font-size: 15px;
+    text-align: center;
+    color: red;
+    font-family: roboto;
+}
+.container .header
+{
+    width: 70%;
+    margin: 2% auto 0;
+    font-family: roboto;
+    padding: 20px;
+    text-align: center
+}
+.container .header nav a{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #e6e600;
+    cursor: pointer;
+    border: 1px solid #e6e600;
+    margin: 0px 44px;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-family: roboto;
+}
+.container .header nav a:hover{
+    background-color: #ffffff;
+    color: #e6e600;
+    transition: 0.5s;
+}
+.container .textarea{
+    font-family: roboto;
+    padding: 20px;
+    width: 70%;
+    margin: auto;
+}
+.container .textarea form textarea{
+    padding: 10px;
+    width: 300px;
+    height: 50px;
+    border: 1px solid #b3b3b3;
+    margin: 0 0 20px 0;
+    border-radius: 5px;
+    font-family: roboto;
+}
+.container .textarea form input[type="submit"]{
+    color: #ffffff;
+    width: 111px;
+    height: 31px;
+    background-color: #e6e600;
+    cursor: pointer;
+    border: 1px solid #e6e600;
+    font-size: 18px;
+    border-radius: 2px;
+    font-family: roboto;
+}
+.container .textarea form input[type="submit"]:hover{
+    background-color: #ffffff;
+    color: #e6e600;
+    transition: 0.5s;
+}
+.container #post_list{
+    width: 70%;
+    margin: auto;
+    border-top: 1px solid #e6e6e6;
+}
+.container #post_list div{
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+}
+.container #post_list div a{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #e6e600;
+    cursor: pointer;
+    border: 1px solid #e6e600;
+    font-size: 12px;
+    padding: 6px 6px;
+    border-radius: 5px;
+    font-family: roboto;
+}
+.container #post_list div a:hover{
+    background-color: #ffffff;
+    color: #e6e600;
+    transition: 0.5s;
+}

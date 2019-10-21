@@ -4,67 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sign Up AJAX</title>
+	<link rel="stylesheet" type="text/css" href="src/style.css">
+    <title>Sign Up</title>
 </head>
 <body>
     <div class="container">
         <div class="signup">
-            <h1>Create Your Account</h1>
-            <form method="post">
+            <form method="post" id="signup">
                 <label>Name:</label><br>
-                <input type="text" name="name" value="<?php echo isset($error) && isset($_POST['name']) ? $_POST['name'] : "" ?>" required> 
+                <input type="text" name="user_name" >
                 <br>
-
                 <label>Email:</label><br>
-                <input type="email" name="email" required value="<?php echo isset($error) && isset($_POST['email']) ? $_POST['email'] : "" ?>" >
+                <input type="email" name="email" >
                 <br>
-                
                 <label>Password:</label><br>
-                <input type="password" name="password" required>
+                <input type="password" name="password">
                 <br>
-
                 <label>Confirm Password:</label><br>
-                <input type="password" name="re_password" required>
+                <input type="password" name="re_password" >
                 <br>
-                <span>
-                    <?php echo isset($_SESSION['password_error']) ?  $_SESSION['password_error'] : '' ?>
-                </span><br>
-
-                <label>Number</label><br>
-                <input type="text" name="number" value="<?php echo isset($error) && isset($_POST['number']) ? $_POST['number'] : "" ?>" >
+                <input type="submit" name="submit" value="SIGN UP">
                 <br>
-                
-                <span>
-                    <?php echo isset($_SESSION['empty_fields']) ?  $_SESSION['empty_fields'] : '' ?>
-                </span><br>
-
-                <input type="submit" value="SIGN UP" name="submit">
+                <span><p id="form_msg"></p></span>
             </form>
-            <p> Already a member?<a href="index.php"> Login </a>here.</p>
+            <p> Already a member?<a href="index.php">Login</a>here.</p>
         </div>
     </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script>
-        $("form").on('submit',function(e){
-
-            e.preventDefault();
-            formData = {};
-
-            $(this).find("input").each(function(){ 
-                formData[$(this).attr("name")] = $(this).val();
-            }) ;
-
-            $.ajax({
-                url:"php/signup.php",
-                type:"POST",
-                dataType:"html",
-                cache:false,
-                data:formData,
-                success:function(response){
-                    window.location.href = "profile.php";
-                } 
-            })
-        })
-    </script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+    <script src="src/script.js"></script>
 </body>
 </html>

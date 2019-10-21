@@ -1,5 +1,11 @@
-<?php 
-
-    define('ERROR', 'Credentials are incorrect.');
-    define('PASSWORD_ERROR', 'Incorrect password.');
-    define('EMPTY_FIELD', 'Fill in the fields properly.');
+<?php
+//database 
+    define('HOST' , 'localhost');
+    define('DB_USERNAME' , 'root');
+    define('DB_PASSWORD' , '');
+    define('DB_NAME' , 'usingajax');
+//login error
+    define('CRED_ERROR' , 'Credentails are wrong.');
+//signup
+    define('RE_PASSWORD_ERROR' , 'Incorrect Password.');
+    define('EMPTY_FIELDS' , 'All Fields Are Required.');

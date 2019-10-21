@@ -1,28 +1,31 @@
-<?php require('db_connection.php'); ?>
+<?php require('../db_connection.php') ?>
 <?php session_start(); ?>
 <?php
+$message = "";
 
     if(isset($_POST['submit']))
     {
         $email      = $_POST['email'];    
-        $passowrd   = $_POST['passowrd']; 
+        $password   = $_POST['password']; 
         
         $query = "SELECT * FROM registered_users 
-                  WHERE EMAIL  = '$email' 
-                  AND PASSWORD = '$passowrd' "; 
+                    WHERE EMAIL  = '$email' 
+                    AND PASSWORD = '$password' "; 
         
         $result_set = mysqli_query($conn,$query);
-         
+        
         if( mysqli_num_rows($result_set) > 0  )
-        {
-            
-          $user = mysqli_fetch_assoc($result_set);
+        {    
+            $user = mysqli_fetch_assoc($result_set);
 
             $_SESSION['user_id']    = $user['id'];
             $_SESSION['user_name']  = $user['name'];
-            
-        }else
+        
+            $message = "Success";
+        }
+        else
         {
-            echo "Credentails is wrong.";
+            $message = CRED_ERROR ;
         }
     }
+echo $message;
