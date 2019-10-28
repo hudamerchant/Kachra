@@ -1,0 +1,72 @@
+@font-face{
+    font-family: roboto ;
+    src: url("Roboto-Light.ttf");
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 90%;
+    margin: auto;
+    margin-top: 5% ;
+    font-family: roboto;
+    font-weight: 100;
+}
+.container form input{
+    margin: 0px;
+    padding: 10px;
+    width: 186px;
+    background-color: #f2f2f2;
+    border: none;
+}
+.container form input[type="submit"]{
+    color: #ffffff;
+    width: 80px;
+    background-color: #66c2ff;
+    cursor: pointer;
+    border: 1px solid #66c2ff;
+    border-radius: 5px;
+}
+.container form input[type="submit"]:hover{
+    color: #66c2ff;
+    background-color: #ffffff;
+    transition : 0.3s;
+}
+.container .user_list {
+    text-align: center;
+}
+.container .user_list table th,td{
+    padding: 1px 1px;
+}
+
+.container .user_list table tfoot th input{
+    margin: 2px;
+    padding: 6px;
+    width: 214px;
+    background-color: #f2f2f2;
+    border: none;
+    font-family: roboto;
+    font-weight: 100;
+}
+.container .user_list table tbody tr{
+    border-bottom: 1px solid #e6e6e6;
+}
+.container .user_list table tbody tr td{
+    padding: 8px 0;
+}
+.container .user_list input[type="submit"]{
+    margin: 20px 0;
+    color: #ffffff;
+    width: 119px;
+    background-color: #66c2ff;
+    cursor: pointer;
+    border: 1px solid #66c2ff;
+    border-radius: 5px;
+    padding: 7px 0;
+}
+.container .user_list input[type="submit"]:hover{
+    color: #66c2ff;
+    background-color: #ffffff;
+    transition : 0.3s;
+}
