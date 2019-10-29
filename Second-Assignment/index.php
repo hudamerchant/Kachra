@@ -61,12 +61,12 @@
                         <th></th>
                         <th></th>
                         <th>
-                        <input type="text" name="first_name" class="find_fname" placeholder="First Name">
+                        <input type="text" name="first_name" class="find_fname search_all" placeholder="First Name">
                         </th>
                         <th>
-                        <input type="text" name="last_name" class="find_lname" placeholder="Last Name"></th>
-                        <th><input type="number" name="age" class="find_age" placeholder="Age"></th>
-                        <th><input type="email" name="email" class="find_email" placeholder="Email"></th>
+                        <input type="text" name="last_name" class="find_lname search_all" placeholder="Last Name"></th>
+                        <th><input type="number" name="age" class="find_age search_all" placeholder="Age"></th>
+                        <th><input type="email" name="email" class="find_email search_all" placeholder="Email"></th>
                     </tr>
                 </tfoot>
                 <tbody>
