@@ -43,3 +43,26 @@ body{
     margin: 0;
     font-family: roboto;
 }
+.container table{
+    width: 80%;
+    margin: auto;
+    font-family: roboto;
+    text-align: center;
+    border-collapse: collapse;
+}
+.container th , td {
+    border: 1px solid #e6e6e6;
+    padding: 12px;
+}
+.container th{
+    font-size: 20px;
+    font-weight: 100;
+    background-color: #4dc3ff;
+    color: #ffffff;
+}
+.container td {
+    font-size: 15px;
+}
+.container tr:nth-child(even){
+    background-color: #f2f2f2;
+}
