@@ -15,7 +15,15 @@
                     <?php echo form_error('age'); ?>
                    
                 </div>
-
+                <div class="form-group">
+                    <label class="float-left">Register as</label>
+                    <select name="role" class="form-control">
+                        <option value="" >Select Role</option>
+                        <option value="1" >Freelancer</option>
+                        <option value="2" >Client</option>
+                    </select>
+                    <?php echo form_error('role'); ?>
+                </div>
                 <div class="form-group">
                     <label class="float-left">Email</label>
                     <input type="email" name="email" class="form-control">

@@ -8,13 +8,13 @@
       <li class="nav-item">
         <a class="nav-link" href="<?php echo site_url('Signup') ?>">Sign up</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="<?php echo site_url('Login') ?>">Login</a>
-      </li>
-      <?php if(isset($_SESSION['status']) && $_SESSION['status'] == 'logged in')
-      {?>
+      <?php if($this->session->userdata('logged in')) {?>
             <li class="nav-item">
             <a class="nav-link" href="<?php echo site_url('Logout') ?>">Logout</a>
+            </li>
+      <?php }else{ ?>
+            <li class="nav-item">
+            <a class="nav-link" href="<?php echo site_url('Login') ?>">Login</a>
             </li>
       <?php } ?>
     </ul>

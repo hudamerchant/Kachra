@@ -22,6 +22,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 'rules' => 'required|numeric'
                             ],
                             [
+                                'field' => 'role' ,
+                                'label' => 'Select Role' ,
+                                'rules' => 'required|numeric'
+                            ],
+                            [
                                 'field' => 'email' ,
                                 'label' => 'Email' ,
                                 'rules' => 'required|valid_email'
@@ -51,6 +56,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 {
                     $name          = $_POST['name'];
                     $age           = $_POST['age'];
+                    $role          = $_POST['role'];
                     $email         = $_POST['email'];
                     $password      = $_POST['password'];
                     $re_password   = $_POST['re_password'];
@@ -62,6 +68,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 'age'       => $age,
                                 'email'     => $email,
                                 'password'  => $hash,
+                                'role_id'      => $role
                                 ];
                         $this->load->model('UserModel');
                         $result = $this->UserModel->insertValue($arr);

@@ -15,17 +15,13 @@
         }
 
 //  ----   RETRIEVE / SELECT   ----   //
-        public function selectValue( $where = '' , $value = ''){
-            if(!empty($where))
+        public function selectValue( array $where = [] ){
+            if(count($where) > 0)
             {
-                $query = $this->db->get_where($this->table_name , $where, $value );
-                return $query;    
+                $this->db->where( $where );    
             }
-            else
-            {
                 $query = $this->db->get($this->table_name);
                 return $query;
-            }
         }
 
 //  ----   UPDATE   ----  //

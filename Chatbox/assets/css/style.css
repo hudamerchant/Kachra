@@ -1,0 +1,98 @@
+@font-face{
+    font-family: roboto ;
+    src: url("Roboto-Light.ttf");
+}
+.chatbox {
+    margin: 0px auto;
+    width: 50%;
+    border: #706e6e 2px solid;
+    border-radius: 10px 10px 0px 0px;
+    margin-top: 10px;
+    height: 75vh;
+    /* position: fixed; */
+    bottom: 0;
+    right: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-end;
+}
+
+ul.chatbox-listing {
+    overflow-y: scroll;
+    /* position: absolute; */
+    list-style: none;
+    bottom: 38px;
+    left: 0;
+    display: flex;
+    width: calc( 100% - 2px );
+    padding: 5px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px grey solid;
+    height: 85%;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+ 
+.message {
+    background: #9E9E9E;
+    color: white;
+    border-radius: 0px 5px;
+    margin-top: 5px;
+    padding: 5px;
+    font-size: 12px;
+    width: calc(100% - 50px);
+}
+
+.message.your-message {
+    background: #03A9F4;
+    border-radius: 5px 0px;
+    float: right;
+}
+.chatarea {
+    height: 10%;
+    width: 100%;
+    /* position: absolute; */
+    bottom: 0;
+    display: flex;
+    padding: 5px;
+    align-items: center;
+}
+
+input.form-control {
+    float: left;
+    /* width: 208px; */
+    margin-right: 10px;
+}
+/*
+input[type="button"] {
+    border-radius: 4px;
+    border: none;
+    padding: 2px 10px;
+    margin-top: 3px;
+}*/
+.view {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+form {
+    width: 100%;
+}
+
+.col-80 {margin: 10px;flex-grow: 1;}
+
+/*li{
+    width: 100%;
+}*/
+.btn{
+	margin: 10px 0;
+}
+.form-group :last-child{
+    display: inline-block;
+    margin: 5px 0;
+}
