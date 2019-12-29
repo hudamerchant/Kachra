@@ -1,6 +1,6 @@
 <?php require_once('db_connection.php'); ?>
 <?php
-
+$response = [];
     if($_POST['search'] == 'search_all')
     {
         $first_name = $_POST['first_name'];

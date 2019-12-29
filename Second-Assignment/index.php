@@ -132,6 +132,6 @@
         </div>
 
     </div>
-    <script src="assets/JS/script.js"></script>
+    <script src="assets/JS/script.js?v1"></script>
 </body>
 </html>

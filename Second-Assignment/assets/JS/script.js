@@ -209,8 +209,8 @@ $(document).ready(function(){
         $(document).on('keyup','.search_all',function(e){
 
             input_field_value = $('.search_all').val();
-            if(e.keyCode == '13')
-            {
+            // if(e.keyCode == '13')
+            // {
                 search_val = $(this).val().toLowerCase();
                 formData = {
                     first_name  : $('.find_fname').val(),
@@ -236,7 +236,7 @@ $(document).ready(function(){
                         
                     }
                 })
-            }
+            // }
             if(input_field_value.length == 0)
             {
                 $('table > tbody > tr').show();
